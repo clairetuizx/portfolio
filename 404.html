@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claire Tui — Creator Producer</title>
+<meta name="description" content="Claire Tui is a Singapore-based creator producer: creator campaigns, social ads, video productions and offline activations for Meta, HEPMIL/SGAG, Big 3 Media and CNA.">
+<meta property="og:title" content="Claire Tui — Creator Producer">
+<meta property="og:description" content="Claire Tui is a Singapore-based creator producer: creator campaigns, social ads, video productions and offline activations for Meta, HEPMIL/SGAG, Big 3 Media and CNA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2B2220">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&amp;family=Silkscreen&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B2220}a:hover{color:#2F5FA8}
+.navlink{text-decoration:none;padding:10px 12px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;border:2px solid transparent}
+.navlink:hover{background:#2B2220;color:#fff}
+.navon{background:#F2C45C;border:2px solid #2B2220}
+.win{box-sizing:border-box;border:2.5px solid #2B2220;background:#FFF8EF;box-shadow:4px 4px 0 #2B2220;border-radius:14px 10px 16px 12px / 12px 16px 10px 14px;overflow:hidden}
+.grain{background-image:radial-gradient(rgba(43,34,32,.07) 1px,transparent 1.2px),radial-gradient(rgba(43,34,32,.05) 1px,transparent 1.2px);background-size:7px 7px,11px 11px;background-position:0 0,3px 5px}
+.chip{border-radius:12px 14px 11px 15px !important}
+.btn,.tab,.xbtn{border-radius:10px 12px 9px 13px !important}
+.field{border-radius:8px}
+.bar{height:24px;border-bottom:2px solid #2B2220;background:repeating-linear-gradient(to bottom,#2B2220 0 2px,#fff 2px 4px);display:flex;align-items:center;justify-content:center;position:relative}
+.bar span{background:#fff;padding:0 10px;font-family:Silkscreen,monospace;font-size:11px;line-height:24px}
+.bar i{position:absolute;left:10px;top:4px;width:12px;height:12px;border:2px solid #2B2220;background:#fff;box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border:2px solid #2B2220;background:#2B2220;color:#fff;font-family:'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;font-weight:600;font-size:17px;letter-spacing:.01em;text-decoration:none;box-shadow:3px 3px 0 #EBB27C;cursor:pointer}
+.btn:hover{background:#fff;color:#2B2220}
+.btn:active{transform:translate(2px,2px);box-shadow:none}
+.btn2{background:#fff;color:#2B2220;box-shadow:3px 3px 0 #2B2220}.btn2:hover{background:#2B2220;color:#fff}
+.icon{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;font-family:Silkscreen,monospace;font-size:11px;color:#2B2220;padding:8px;min-width:64px}
+.icon:hover svg{filter:invert(1)}
+.icon:hover em{background:#2B2220;color:#fff}
+.icon em{font-style:normal;padding:1px 4px;background:#fff}
+@media (max-width: 760px){.desk{display:none !important}}
+@keyframes wig{0%{transform:rotate(-6deg)}100%{transform:rotate(6deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes blink{50%{opacity:0}}
+.bob{animation:bob 3s steps(3) infinite}
+.caret{animation:blink 1s steps(1) infinite}
+.card{transition:transform .1s,box-shadow .1s}
+.card:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 #2B2220}
+.ph{background:repeating-linear-gradient(45deg,#F3DCC2 0 12px,#fff 12px 24px);display:flex;align-items:center;justify-content:center;font-family:Silkscreen,monospace;font-size:11px;color:#5b5440;border-bottom:2px solid #2B2220}
+.hl{background:linear-gradient(transparent 55%,#F2C45C 55%);padding:0 2px}
+.chip{display:inline-flex;align-items:center;min-height:32px;box-sizing:border-box;padding:5px 12px;line-height:1.4;border:2px solid #2B2220;background:#fff;font-family:'IBM Plex Mono',monospace;font-size:13px}
+.chip:hover{background:#F2C45C}
+.field{width:100%;box-sizing:border-box;border:2px solid #2B2220;background:#fff;padding:12px;font-family:'IBM Plex Mono',monospace;font-size:15px;min-height:48px}
+.field:focus{outline:none;background:#F3DCC2;box-shadow:3px 3px 0 #2B2220}
+.tab{min-height:48px;padding:0 22px;border:2px solid #2B2220;font-family:'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;font-weight:600;font-size:17px;letter-spacing:.01em;cursor:pointer;color:#2B2220}
+.side{text-align:left;width:100%;display:flex;align-items:center;gap:12px;min-height:56px;padding:8px 12px;border:2px solid transparent;font-family:'IBM Plex Mono',monospace;font-size:15px;cursor:pointer;color:#2B2220}
+.side:hover{border-color:#2B2220}
+
+.scene{container-type:inline-size;container-name:scene;background:#3A2F2B;overflow:hidden}
+.scene-in{position:relative;width:560px;height:380px;margin:0 auto}
+@container scene (max-width:559px){.scene-in{zoom:.82}}
+@container scene (max-width:459px){.scene-in{zoom:.66}}
+@container scene (max-width:369px){.scene-in{zoom:.58}}
+.rec{display:inline-block;width:10px;height:10px;background:#E04A3A;animation:blink 1.2s steps(1) infinite}
+.arow{transition:background .15s}
+.arow:hover{background:#FBF8EE}
+.medal{transform-origin:50% 0}
+.arow:hover .medal{animation:swing .7s ease-in-out}
+@keyframes swing{0%{transform:rotate(0)}25%{transform:rotate(8deg)}55%{transform:rotate(-6deg)}80%{transform:rotate(3deg)}100%{transform:rotate(0)}}
+.fold{position:relative;display:block;height:400px;text-decoration:none;color:#2B2220;perspective:1100px}
+.fold:hover{color:#2B2220}
+.fold:focus-visible{outline:3px solid #2F5FD0;outline-offset:6px}
+.fold-tab{position:absolute;left:0;top:0;width:42%;height:32px;border:2px solid #2B2220;border-bottom:0;box-sizing:border-box}
+.fold-back{position:absolute;left:0;right:0;top:30px;bottom:0;border:2px solid #2B2220;box-sizing:border-box;box-shadow:3px 3px 0 #2B2220}
+.fold-paper{position:absolute;left:18px;right:18px;top:50px;height:230px;background:#fff;border:2px solid #2B2220;box-sizing:border-box;padding:12px 14px;display:flex;flex-direction:column;gap:8px;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.fold-paper.p2{left:34px;right:8px;top:44px;background:#F5F3EE;transform:rotate(2deg)}
+.fold-front{position:absolute;left:0;right:0;bottom:0;min-height:290px;border:2px solid #2B2220;box-sizing:border-box;padding:24px;display:flex;flex-direction:column;gap:12px;transform-origin:50% 100%;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.fold:hover .fold-front,.fold:focus-visible .fold-front{transform:rotateX(-26deg)}
+.fold:hover .p1,.fold:focus-visible .p1{transform:translateY(-78px) rotate(-1.5deg)}
+.fold:hover .p2,.fold:focus-visible .p2{transform:translateY(-58px) rotate(5deg)}
+.fold-open{transition:letter-spacing .3s}
+.fold:hover .fold-open{letter-spacing:.12em}
+
+
+.wave{transform-origin:90% 90%;animation:wave 1s ease-in-out infinite}
+@keyframes wave{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(16deg)}}
+.podium-card:hover .champ{animation:hop .5s steps(3)}
+@keyframes hop{50%{transform:translateY(-10px)}}
+.dd{position:relative;display:inline-flex}
+.dd-menu{display:none;position:absolute;top:100%;left:0;min-width:270px;background:#fff;border:2px solid #2B2220;box-shadow:3px 3px 0 #2B2220;flex-direction:column;padding:6px;z-index:20}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu{display:flex}
+.dd-menu a{text-decoration:none;padding:10px 12px;min-height:44px;box-sizing:border-box;display:flex;align-items:center;gap:10px}
+.dd-menu a:hover{background:#2B2220;color:#fff}
+.xbtn{min-height:44px;padding:0 18px;border:2px solid #2B2220;background:#fff;font-family:'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;font-weight:600;font-size:20px;cursor:pointer;color:#2B2220}
+.xbtn:hover{background:#2B2220;color:#fff}
+@media (max-width:700px){.deco{display:none}}
+.lcl-wrap{position:absolute;left:17px;top:17px;right:17px;bottom:17px;overflow:hidden;pointer-events:none}
+.lcl{position:absolute;left:0;animation-name:lclDrift;animation-timing-function:linear;animation-iteration-count:infinite;will-change:transform}
+.lcl span{position:absolute;background:#FFFDF8;border:2.5px solid #2B2220;box-sizing:border-box}
+.lcl .lcl-b{box-shadow:inset 0 -6px 0 #E3ECF5}
+.lcl .lcl-p,.lcl .lcl-p2{border-bottom:0;transform-origin:50% 100%}
+.lcl-m1,.lcl-m2,.lcl-m3{animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-direction:alternate;transform-origin:50% 100%}
+.lcl-m1{animation-name:lclMorphA}.lcl-m2{animation-name:lclMorphB}.lcl-m3{animation-name:lclMorphC}
+.lcl-m1 .lcl-p{animation:lclPuff 5s ease-in-out infinite alternate}
+.lcl-m2 .lcl-p2{animation:lclPuff 6s ease-in-out infinite alternate-reverse}
+.lcl-m3 .lcl-p,.lcl-m3 .lcl-p2{animation:lclPuff 4.5s ease-in-out infinite alternate}
+@keyframes lclDrift{from{transform:translateX(-190px)}to{transform:translateX(420px)}}
+@keyframes lclMorphA{0%{transform:scale(1,1)}50%{transform:scale(1.18,.9)}100%{transform:scale(.88,1.12)}}
+@keyframes lclMorphB{0%{transform:scale(.9,1.05);opacity:.85}100%{transform:scale(1.2,.92);opacity:1}}
+@keyframes lclMorphC{0%{transform:scale(1.1,.95)}100%{transform:scale(.85,1.15);opacity:.8}}
+@keyframes lclPuff{0%{transform:scale(.8,.75)}100%{transform:scale(1.15,1.25)}}
+@media (prefers-reduced-motion:reduce){.lcl,.lcl-m1,.lcl-m2,.lcl-m3,.lcl span{animation:none !important}}
+
+.room{container-type:inline-size;container-name:room;position:relative;overflow:hidden}
+.stage{position:relative;width:1000px;height:700px;margin:0 auto}
+@container room (max-width:999px){.stage{zoom:.8}}
+@container room (max-width:799px){.stage{zoom:.62}}
+@container room (max-width:619px){.stage{zoom:.48}}
+@container room (max-width:479px){.stage{zoom:.37}}
+.rig{position:absolute;left:250px;top:40px;width:500px;height:430px;perspective:1400px}
+.box{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(-6deg) rotateY(-16deg)}
+.face{position:absolute;box-sizing:border-box;border:3px solid #2B2220}
+.f-front{inset:0;background:#F2CDAE;border-radius:16px 16px 8px 8px;transform:translateZ(110px);box-shadow:inset -10px -12px 0 rgba(0,0,0,.06),inset 8px 8px 0 rgba(255,255,255,.5)}
+.f-side{top:0;left:calc(100% - 110px);width:220px;height:100%;background:#DDB08E;transform:rotateY(90deg);border-radius:8px}
+.f-top{left:0;top:-110px;width:100%;height:220px;background:#EFE9D8;transform:rotateX(90deg);border-radius:12px}
+.vent{position:absolute;right:24px;top:40px;width:120px;height:120px;background:repeating-linear-gradient(90deg,#B8AE95 0 6px,transparent 6px 12px)}
+.bezel{position:absolute;left:34px;top:30px;width:350px;height:280px;background:#DDB08E;border:3px solid #2B2220;border-radius:14px;box-shadow:inset 6px 6px 0 rgba(0,0,0,.12)}
+.screen{position:absolute;left:16px;top:16px;right:16px;bottom:16px;background:#14191E;border:3px solid #2B2220;border-radius:18px/14px;overflow:hidden;box-shadow:inset 0 0 30px rgba(0,0,0,.7)}
+.glare{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 80% at 20% 10%,rgba(255,255,255,.14),transparent 45%);z-index:6}
+.scan{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(0,0,0,.12) 0 2px,transparent 2px 4px);z-index:5}
+.drive{position:absolute;left:404px;top:120px;width:64px;height:120px;border:3px solid #2B2220;background:#D8D0BA;border-radius:6px}
+.drive i{position:absolute;left:24px;top:14px;width:8px;height:88px;background:#2B2220;border-radius:3px}
+.badge{position:absolute;left:38px;bottom:34px;font-family:Silkscreen,monospace;font-size:13px;letter-spacing:.06em}
+.grille{position:absolute;left:150px;bottom:30px;width:200px;height:26px;background:repeating-linear-gradient(90deg,#B8AE95 0 4px,transparent 4px 9px)}
+.pwr{position:absolute;right:30px;bottom:22px;display:flex;align-items:center;gap:12px}
+.pwr-btn{width:52px;height:52px;border:3px solid #2B2220;background:#D6CDB5;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:inset -3px -3px 0 rgba(0,0,0,.18),inset 3px 3px 0 rgba(255,255,255,.6),0 4px 0 #2B2220;transform:translateY(-4px)}
+.pwr-btn:hover{background:#F2C45C}
+.pwr-btn:active{transform:translateY(0);box-shadow:inset 3px 3px 0 rgba(0,0,0,.2)}
+.pwr-hint{position:absolute;right:-6px;bottom:84px;background:#fff;border:2px solid #2B2220;padding:6px 10px;font-family:Silkscreen,monospace;font-size:11px;white-space:nowrap;animation:bob 1.6s steps(2) infinite}
+.led{display:inline-block;width:12px;height:12px;border:2px solid #2B2220;background:#5E5A50}
+.led-on{background:#5BD15B;box-shadow:0 0 10px #5BD15B}
+.kb{position:absolute;left:220px;top:500px;width:560px;height:150px;perspective:900px}
+.kb-plane{position:absolute;inset:0;transform:rotateX(52deg) rotateZ(-3deg);transform-origin:center bottom;background:#F2CDAE;border:3px solid #2B2220;border-radius:12px;box-shadow:0 14px 0 #B8AE95,0 17px 0 #2B2220;padding:14px;box-sizing:border-box;display:grid;grid-template-columns:repeat(15,minmax(0,1fr));gap:5px}
+.key{background:#FBEBDD;border:2px solid #2B2220;border-radius:4px;height:20px;box-shadow:0 3px 0 #8A8578}
+.k2{grid-column:span 2}.k3{grid-column:span 3}.k7{grid-column:span 7}
+.mouse{position:absolute;left:810px;top:560px;width:56px;height:84px;background:#F2CDAE;border:3px solid #2B2220;border-radius:24px 24px 26px 26px;transform:rotateX(45deg);box-shadow:0 6px 0 #2B2220}
+.boot{position:absolute;inset:0;background:#14191E;color:#F2C45C;padding:22px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;z-index:3;animation:bootout 3.6s linear forwards}
+.boot p{margin:0;opacity:0;animation:show .01s steps(1) forwards}
+@keyframes show{to{opacity:1}}
+@keyframes bootout{0%,96%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+.loadbar{height:14px;border:2px solid #2B2220;background:#fff;overflow:hidden}
+.loadbar i{display:block;height:100%;width:0;background:repeating-linear-gradient(90deg,#2B2220 0 8px,transparent 8px 12px);animation:load 1.6s steps(12) 3.6s forwards}
+@keyframes load{to{width:100%}}
+.flash{position:absolute;inset:0;background:#fff;z-index:4;animation:flash .35s ease-out forwards;pointer-events:none}
+@keyframes flash{0%{opacity:.9;transform:scaleY(.02)}60%{opacity:.8;transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
+
+.pane{position:absolute;inset:22px 0 0 0;opacity:0;animation:pane 12s steps(1) infinite}
+@keyframes pane{0%{opacity:1}33.33%{opacity:0}100%{opacity:0}}
+.think{position:absolute;opacity:0;animation:pane 12s steps(1) infinite}
+.typing{animation:type .5s steps(2) infinite}
+@keyframes type{50%{transform:translateY(2px)}}
+.bigscene{container-type:inline-size;container-name:big;background:#3A2F2B;overflow:hidden}
+.big-in{position:relative;width:1140px;height:460px;margin:0 auto}
+@container big (max-width:1139px){.big-in{zoom:.84}}
+@container big (max-width:959px){.big-in{zoom:.66}}
+@container big (max-width:759px){.big-in{zoom:.6}}
+@container big (max-width:679px){.big-in{zoom:.5}}
+@container big (max-width:569px){.big-in{zoom:.44}}
+@container big (max-width:499px){.big-in{zoom:.38}}
+@container big (max-width:429px){.big-in{zoom:.32}}
+@container big (max-width:369px){.big-in{zoom:.29}}
+.walker{position:absolute;top:186px;left:60px;animation:walk 16s linear infinite}
+@keyframes walk{0%{left:60px}45%{left:930px}50%{left:930px}95%{left:60px}100%{left:60px}}
+.walker .flip{animation:flip 16s steps(1) infinite}
+@keyframes flip{0%{transform:scaleX(1)}47.5%{transform:scaleX(-1)}97.5%{transform:scaleX(1)}}
+.step{animation:stepb .4s steps(2) infinite}
+@keyframes stepb{50%{transform:translateY(-4px)}}
+.say{position:absolute;left:96px;top:-46px;white-space:nowrap}
+.say span{position:absolute;left:0;top:0;opacity:0;background:#fff;border:2px solid #2B2220;padding:5px 9px;font-family:Silkscreen,monospace;font-size:11px;animation:pane 16s steps(1) infinite}
+.talk{animation:talk 1.2s steps(2) infinite}
+@keyframes talk{50%{transform:translateY(-3px)}}
+.clap{transform-origin:6px 100%;animation:clap 2.4s steps(1) infinite}
+@keyframes clap{0%{transform:rotate(-28deg)}10%{transform:rotate(0)}100%{transform:rotate(0)}}
+.fly{position:absolute;animation:fly 3s ease-in infinite}
+@keyframes fly{0%{transform:translate(160px,-40px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translate(0,0);opacity:0}}
+.ring{animation:ringr .25s steps(2) infinite}
+@keyframes ringr{50%{transform:rotate(12deg)}}
+.notify{animation:blink 1s steps(1) infinite}
+
+.pane6{position:absolute;inset:20px 0 0 0;opacity:0;animation:six 21.6s steps(1) infinite}
+.think6{position:absolute;opacity:0;animation:six 21.6s steps(1) infinite}
+@keyframes six{0%{opacity:1}16.66%{opacity:0}100%{opacity:0}}
+.steam{animation:steam 1.8s ease-in-out infinite;opacity:.7}
+@keyframes steam{0%{transform:translateY(4px);opacity:0}50%{opacity:.7}100%{transform:translateY(-8px);opacity:0}}
+.walk2{position:absolute;animation:walk2 26s linear infinite}
+@keyframes walk2{0%{left:60px;top:196px}38%{left:960px;top:196px}48%{left:960px;top:590px}86%{left:60px;top:590px}96%{left:60px;top:196px}100%{left:60px;top:196px}}
+.walk2 .flip{animation:flip2 26s steps(1) infinite}
+@keyframes flip2{0%{transform:scaleX(1)}48%{transform:scaleX(-1)}86%{transform:scaleX(1)}}
+.walk2 .say span{animation:six 21.6s steps(1) infinite}
+.spot{animation:spot 2.4s ease-in-out infinite alternate;transform-origin:50% 0}
+@keyframes spot{0%{transform:rotate(-14deg)}100%{transform:rotate(14deg)}}
+.disco{animation:disco 3s linear infinite}
+@keyframes disco{to{transform:rotate(360deg)}}
+.buzz{animation:blink .9s steps(1) infinite}
+.crowd{animation:talk 0.9s steps(2) infinite}
+
+.pane8{position:absolute;inset:20px 0 0 0;opacity:0;animation:eight 5.6s steps(1) infinite}
+.think8{position:absolute;opacity:0;animation:eight 5.6s steps(1) infinite}
+@keyframes eight{0%{opacity:1}12.5%{opacity:0}100%{opacity:0}}
+.mini{position:relative;width:320px;height:210px;background:#3A2F2B;border:3px solid #2B2220;box-shadow:4px 4px 0 #2B2220;overflow:hidden;flex:0 0 auto}
+.pop{position:absolute;opacity:0;animation:pop 4s ease-out infinite}
+@keyframes pop{0%{opacity:0;transform:translateY(8px) scale(.6)}8%{opacity:1;transform:translateY(0) scale(1)}22%{opacity:1}30%{opacity:0;transform:translateY(-10px)}100%{opacity:0}}
+.code i{display:block;height:6px;margin:5px 0;background:currentColor;width:0;animation:code 3s steps(8) infinite}
+@keyframes code{0%{width:0}60%,100%{width:var(--w)}}
+.phonebtn{all:unset;position:absolute;cursor:pointer;z-index:4}
+.phonebtn:focus-visible{outline:3px solid #2F5FD0;outline-offset:3px}
+.phonebtn:hover .ph-body{transform:rotate(-8deg) scale(1.06)}
+.ph-body{transition:transform .15s}
+.wavearc{position:absolute;border:3px solid #D9534F;border-left:0;border-bottom:0;border-radius:0 40px 0 0;opacity:0;animation:arc 1.2s ease-out infinite}
+@keyframes arc{0%{opacity:.9;transform:scale(.6)}100%{opacity:0;transform:scale(1.3)}}
+.car-dot{width:10px;height:10px;border:2px solid #2B2220;background:#fff;padding:0;cursor:pointer}
+
+@media (max-width:700px){
+.fold img{max-width:100%;height:auto !important}
+.navlinks{flex-wrap:nowrap !important;overflow-x:auto;width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks{gap:0 !important}
+header nav{padding:4px 10px !important}
+.fold-paper li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block !important}
+.navlink{white-space:nowrap;padding:8px 6px;font-size:11px;letter-spacing:0}
+.deco-win{transform:scale(.6);transform-origin:top left;top:90px !important}
+.deco-note{transform:scale(.62) rotate(3deg) !important;transform-origin:top right;top:110px !important}
+.dd-menu{display:none !important}
+.tabrow{flex-wrap:wrap !important;gap:8px !important;padding:2px 0 8px}
+.tabrow::-webkit-scrollbar{display:none}
+.tabrow .tab{white-space:nowrap;flex:0 0 auto;font-size:16px !important;padding:0 12px !important;min-height:42px !important;height:auto !important}
+[style*="padding: 72px 24px"]{padding-top:36px !important;padding-bottom:28px !important}
+[style*="padding: 80px 24px"]{padding-top:36px !important}
+[style*="padding: 40px 24px 96px"],[style*="padding: 32px 24px 96px"],[style*="padding: 56px 24px 96px"]{padding-bottom:56px !important}
+.foldgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 14px !important}
+.fold,button.fold{height:236px !important}
+.fold-paper{left:10px !important;right:10px !important;top:44px !important;padding:8px 10px !important}
+.fold-paper.p2{left:18px !important;right:4px !important}
+.fold-paper ul{font-size:11px !important}
+.fold-front,button.fold .fold-front{min-height:168px !important;padding:14px !important;gap:8px !important}
+.fold-front svg{width:44px !important;height:auto !important}
+.fold-front > span:first-child > span,.fold-front > span:first-child > img{width:44px !important;height:44px !important}
+.fold-open{white-space:nowrap;font-size:9px !important}
+.fold-front > span:first-child{height:40px !important}
+.ftitle{font-size:24px !important}
+.deco{display:none !important}
+.fold-paper{height:150px !important;overflow:hidden}
+.fdesc{display:none !important}
+.fold-tab{height:26px !important}
+.fold-back{top:24px !important}
+.bigscene{overflow-x:auto !important}
+.btn{font-size:19px}
+h1{overflow-wrap:anywhere}
+}
+
+@container room (max-width:999px){.stage{zoom:.8 !important}.desk1{height:240px !important}}
+@container room (max-width:799px){.stage{zoom:.7 !important;margin-left:calc((100cqw - 700px) / 1.4) !important}.desk1{height:210px !important}}
+@container room (max-width:479px){.stage{zoom:.62 !important;margin-left:calc((100cqw - 620px) / 1.24) !important}.desk1{height:186px !important}}
+</style>
+
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="grain" style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: #2B2220; background-color: #F6EBDB; min-height: 100vh">
+<div class="room" style="min-height: 100vh; background: repeating-linear-gradient(90deg, #2E2724 0 86px, #282120 86px 90px); display: flex; flex-direction: column">
+<p style="position: relative; z-index: 2; margin: 28px 0 0; text-align: center; font-family: Silkscreen, monospace; font-size: 12px; letter-spacing: 0.04em; color: #F6EBDB">Claire Tui · Portfolio</p>
+<div style="flex: 1; display: flex; align-items: flex-end; position: relative">
+<div class="desk1" style="position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: #CF7426; border-top: 4px solid #2B2220; box-shadow: inset 0 18px 0 #D97F2E"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 40px; background: #9A4E1C; border-top: 3px solid #2B2220"></div>
+<div class="stage">
+<div style="position: absolute; left: 6px; top: -56px; width: 270px; height: 340px; background: #D9822B; border: 3px solid #2B2220; border-radius: 6px; box-shadow: inset 0 0 0 10px #B8622A, 5px 5px 0 rgba(0,0,0,.35)"></div>
+<div style="position: absolute; left: 770px; top: -190px; width: 420px; height: 440px; border: 5px solid #2B2220; border-radius: 8px; background: linear-gradient(180deg, #6FA6E6 0%, #9CC7F0 55%, #CFE5F6 100%); box-shadow: inset 0 0 0 14px #F3DCC2, inset 0 0 0 17px #2B2220, 6px 6px 0 rgba(0,0,0,.35); overflow: hidden">
+<span style="position: absolute; left: 300px; top: 44px; width: 54px; height: 54px; border-radius: 50%; background: #FFE08A; border: 3px solid #2B2220; box-shadow: 0 0 0 10px rgba(255,224,138,.35)"></span>
+<div class="lcl-wrap"><div class="lcl" style="top: 40px; animation-duration: 38s; animation-delay: -0s"><div class="lcl-m1" style="position: relative; width: 150px; height: 55px; animation-duration: 7s"><span class="lcl-b" style="left: 0; top: 19px; width: 120px; height: 34px; border-radius: 34px"></span><span class="lcl-p" style="left: 30px; top: 4px; width: 60px; height: 34px; border-radius: 34px 34px 0 0"></span><span class="lcl-p2" style="left: 66px; top: 11px; width: 42px; height: 28px; border-radius: 34px 34px 0 0"></span></div></div><div class="lcl" style="top: 110px; animation-duration: 52s; animation-delay: -20s"><div class="lcl-m2" style="position: relative; width: 170px; height: 61px; animation-duration: 9s"><span class="lcl-b" style="left: 0; top: 21px; width: 140px; height: 38px; border-radius: 38px"></span><span class="lcl-p" style="left: 35px; top: 4px; width: 70px; height: 38px; border-radius: 38px 38px 0 0"></span><span class="lcl-p2" style="left: 76px; top: 13px; width: 50px; height: 32px; border-radius: 38px 38px 0 0"></span></div></div><div class="lcl" style="top: 175px; animation-duration: 30s; animation-delay: -12s"><div class="lcl-m3" style="position: relative; width: 130px; height: 49px; animation-duration: 6s"><span class="lcl-b" style="left: 0; top: 17px; width: 100px; height: 30px; border-radius: 30px"></span><span class="lcl-p" style="left: 25px; top: 4px; width: 50px; height: 30px; border-radius: 30px 30px 0 0"></span><span class="lcl-p2" style="left: 56px; top: 9px; width: 35px; height: 24px; border-radius: 30px 30px 0 0"></span></div></div><div class="lcl" style="top: 240px; animation-duration: 44s; animation-delay: -33s"><div class="lcl-m1" style="position: relative; width: 140px; height: 52px; animation-duration: 8s"><span class="lcl-b" style="left: 0; top: 18px; width: 110px; height: 32px; border-radius: 32px"></span><span class="lcl-p" style="left: 27px; top: 4px; width: 55px; height: 32px; border-radius: 32px 32px 0 0"></span><span class="lcl-p2" style="left: 61px; top: 10px; width: 39px; height: 26px; border-radius: 32px 32px 0 0"></span></div></div><div class="lcl" style="top: 285px; animation-duration: 34s; animation-delay: -6s"><div class="lcl-m2" style="position: relative; width: 110px; height: 43px; animation-duration: 7s"><span class="lcl-b" style="left: 0; top: 15px; width: 80px; height: 26px; border-radius: 26px"></span><span class="lcl-p" style="left: 20px; top: 4px; width: 40px; height: 26px; border-radius: 26px 26px 0 0"></span><span class="lcl-p2" style="left: 46px; top: 7px; width: 28px; height: 20px; border-radius: 26px 26px 0 0"></span></div></div><div class="lcl" style="top: 70px; animation-duration: 60s; animation-delay: -45s"><div class="lcl-m3" style="position: relative; width: 100px; height: 37px; animation-duration: 10s"><span class="lcl-b" style="left: 0; top: 13px; width: 70px; height: 22px; border-radius: 22px"></span><span class="lcl-p" style="left: 17px; top: 4px; width: 35px; height: 22px; border-radius: 22px 22px 0 0"></span><span class="lcl-p2" style="left: 41px; top: 5px; width: 25px; height: 16px; border-radius: 22px 22px 0 0"></span></div></div></div>
+<div style="position: absolute; left: -20px; right: -20px; bottom: 0; height: 90px; background: #7E9A4A; border-top: 3px solid #2B2220; border-radius: 60% 50% 0 0 / 40px 50px 0 0"></div>
+<div style="position: absolute; left: 160px; right: -40px; bottom: 0; height: 64px; background: #5E7A36; border-top: 3px solid #2B2220; border-radius: 70% 40% 0 0 / 50px 30px 0 0"></div>
+<span style="position: absolute; left: 160px; top: 40px; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 18px; color: #2B2220; letter-spacing: 4px">v v</span>
+<div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 10px; margin-left: -5px; background: #F3DCC2; border-left: 3px solid #2B2220; border-right: 3px solid #2B2220"></div>
+<div style="position: absolute; top: 50%; left: 0; right: 0; height: 10px; margin-top: -5px; background: #F3DCC2; border-top: 3px solid #2B2220; border-bottom: 3px solid #2B2220"></div>
+</div>
+<div style="position: absolute; left: 750px; top: 238px; width: 460px; height: 18px; background: #D97F2E; border: 3px solid #2B2220; border-radius: 4px; box-shadow: 0 6px 0 rgba(0,0,0,.3)"></div>
+<div style="position: absolute; left: 790px; top: 206px; width: 34px; height: 34px; background: #D9542F; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"></div>
+<div style="position: absolute; left: 776px; top: 172px; width: 34px; height: 22px; background: #7E9A4A; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-25deg)"></div>
+<div style="position: absolute; left: 806px; top: 166px; width: 32px; height: 22px; background: #5E7A36; border: 3px solid #2B2220; border-radius: 0 100%; transform: rotate(20deg)"></div>
+<div style="position: absolute; left: 1120px; top: 196px; width: 44px; height: 44px; background: #F4D5BA; border: 3px solid #2B2220; border-radius: 50% 50% 8px 8px; box-sizing: border-box"><span style="position: absolute; left: 8px; top: 8px; width: 22px; height: 22px; border-radius: 50%; border: 3px solid #2B2220; background: #FFF3E3; box-sizing: border-box"></span></div>
+<div style="position: absolute; left: 300px; top: -138px; width: 96px; height: 96px; border-radius: 50%; background: #FFF3E3; border: 4px solid #2B2220; box-shadow: 4px 4px 0 rgba(0,0,0,.35)"><span style="position: absolute; left: 44px; top: 16px; width: 4px; height: 32px; background: #2B2220; border-radius: 2px"></span><span style="position: absolute; left: 44px; top: 44px; width: 24px; height: 4px; background: #D9542F; border-radius: 2px"></span><span style="position: absolute; left: 42px; top: 42px; width: 8px; height: 8px; border-radius: 50%; background: #2B2220"></span></div>
+<div style="position: absolute; left: 440px; top: -150px; width: 130px; height: 160px; background: #FFF3E3; border: 4px solid #2B2220; box-shadow: 4px 4px 0 rgba(0,0,0,.35); padding: 12px; box-sizing: border-box; transform: rotate(2deg)"><div style="height: 100%; background: linear-gradient(180deg, #A9B3C4 0 40%, #F0A68A 40% 48%, #2B2220 48% 56%, #D9542F 56% 100%); border: 2px solid #2B2220"></div></div>
+<div style="position: absolute; left: 600px; top: -118px; width: 150px; height: 12px; background: #D97F2E; border: 3px solid #2B2220; border-radius: 3px"></div>
+<div style="position: absolute; left: 608px; top: -164px; display: flex; align-items: flex-end; gap: 2px"><span style="width: 14px; height: 44px; background: #D9542F; border: 2.5px solid #2B2220; border-radius: 2px"></span><span style="width: 12px; height: 38px; background: #F2C45C; border: 2.5px solid #2B2220; border-radius: 2px"></span><span style="width: 16px; height: 46px; background: #4F78B8; border: 2.5px solid #2B2220; border-radius: 2px"></span><span style="width: 12px; height: 34px; background: #7E9A4A; border: 2.5px solid #2B2220; border-radius: 2px"></span><span style="margin-left: 10px; width: 26px; height: 26px; border-radius: 50% 50% 4px 4px; background: #E08A3A; border: 2.5px solid #2B2220"></span></div>
+<div style="position: absolute; left: 290px; top: -4px; width: 470px; height: 60px">
+<svg width="470" height="60" viewBox="0 0 470 60" style="position: absolute; left: 0; top: 0; overflow: visible" aria-hidden="true"><path d="M0 6 Q235 60 470 6" fill="none" stroke="#2B2220" stroke-width="2.5"></path></svg>
+<span style="position: absolute; left: 40px; top: 14px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(-6deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #A9B3C4"></span></span><span style="position: absolute; left: 130px; top: 30px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(4deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #F0A68A"></span></span><span style="position: absolute; left: 230px; top: 34px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(-3deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #7E9A4A"></span></span><span style="position: absolute; left: 330px; top: 26px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(5deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #F2C45C"></span></span><span style="position: absolute; left: 410px; top: 12px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(-4deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #4F78B8"></span></span>
+</div>
+<div style="position: absolute; left: 30px; top: -30px; width: 110px; height: 110px; background: #F2C94C; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(-6deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>shoot<br>fri 9am</div><div style="position: absolute; left: 140px; top: 40px; width: 100px; height: 100px; background: #F0A68A; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(5deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>call<br>agency</div><div style="position: absolute; left: 40px; top: 110px; width: 104px; height: 104px; background: #7E9A4A; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(3deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>send<br>deck!</div><div style="position: absolute; left: 150px; top: 160px; width: 96px; height: 96px; background: #A9B3C4; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(-4deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>edit v2<br>by 6pm</div>
+<div style="position: absolute; left: 112px; top: 438px; width: 56px; height: 12px; background: rgba(20,20,20,.22); border-radius: 50%"></div><div style="position: absolute; left: 124px; top: 380px; width: 30px; height: 18px; background: #7DBE6E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-40deg)"></div><div style="position: absolute; left: 146px; top: 376px; width: 30px; height: 18px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(40deg)"></div><div style="position: absolute; left: 136px; top: 366px; width: 24px; height: 18px; background: #4C9A50; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-90deg)"></div><div style="position: absolute; left: 118px; top: 396px; width: 44px; height: 48px; background: #D9735B; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"><span style="position: absolute; left: -6px; right: -6px; top: -3px; height: 12px; background: #D9735B; border: 3px solid #2B2220; border-radius: 3px"></span></div>
+<span style="position: absolute; left: 196px; top: 340px; width: 8px; height: 46px; background: #F2C94C; border: 2px solid #2B2220; transform: rotate(-10deg)"></span><span style="position: absolute; left: 206px; top: 334px; width: 8px; height: 46px; background: #2F5FD0; border: 2px solid #2B2220; transform: rotate(4deg)"></span><span style="position: absolute; left: 216px; top: 342px; width: 8px; height: 46px; background: #D9534F; border: 2px solid #2B2220; transform: rotate(14deg)"></span>
+<div style="position: absolute; left: 188px; top: 372px; width: 42px; height: 72px; background: #A9B3C4; border: 3px solid #2B2220; border-radius: 2px 2px 8px 8px; box-sizing: border-box"></div>
+<div style="position: absolute; left: 30px; top: 430px; width: 120px; height: 80px; background: #FBEBDD; border: 3px solid #2B2220; box-sizing: border-box; transform: rotate(-8deg); background-image: repeating-linear-gradient(to bottom, transparent 0 12px, #A9B3C4 12px 14px)"><span style="position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: #D9542F"></span></div>
+<div style="position: absolute; left: 60px; top: 520px; width: 110px; height: 10px; background: #F2C94C; border: 2px solid #2B2220; transform: rotate(-8deg)"></div>
+<div style="position: absolute; left: 800px; top: 418px; width: 76px; height: 12px; background: rgba(20,20,20,.22); border-radius: 50%"></div><div style="position: absolute; left: 800px; top: 330px; width: 60px; height: 30px; background: #3E8E4E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-30deg)"></div><div style="position: absolute; left: 836px; top: 316px; width: 64px; height: 32px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(20deg)"></div><div style="position: absolute; left: 812px; top: 300px; width: 50px; height: 26px; background: #4C9A50; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-70deg)"></div><div style="position: absolute; left: 806px; top: 366px; width: 64px; height: 58px; background: #F2C94C; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"><span style="position: absolute; left: -6px; right: -6px; top: -3px; height: 12px; background: #F2C94C; border: 3px solid #2B2220; border-radius: 3px"></span></div>
+<div style="position: absolute; left: 886px; top: 446px; width: 64px; height: 12px; background: rgba(20,20,20,.22); border-radius: 50%"></div><div style="position: absolute; left: 906px; top: 352px; width: 26px; height: 64px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 14px 14px 0 0; box-sizing: border-box"></div><div style="position: absolute; left: 892px; top: 368px; width: 16px; height: 26px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 10px 10px 0 0; box-sizing: border-box"></div><div style="position: absolute; left: 892px; top: 412px; width: 52px; height: 40px; background: #F4D5BA; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"><span style="position: absolute; left: -6px; right: -6px; top: -3px; height: 12px; background: #F4D5BA; border: 3px solid #2B2220; border-radius: 3px"></span></div>
+<div style="position: absolute; left: 846px; top: 520px; width: 46px; height: 22px; background: #fff; border: 3px solid #2B2220; border-radius: 4px; box-sizing: border-box; transform: rotate(10deg)"><span style="position: absolute; left: 4px; right: 4px; top: 4px; height: 6px; background: #F0A68A"></span></div>
+<div style="position: absolute; left: 230px; top: 440px; width: 600px; height: 60px; background: rgba(20,20,20,.28); border-radius: 50%; filter: blur(6px)"></div>
+<div class="rig"><div class="box">
+<div class="face f-top"></div>
+<div class="face f-side"><div class="vent"></div></div>
+<div class="face f-front">
+<div style="position: absolute; left: 50%; top: 5px; transform: translateX(-60%); display: flex; gap: 3px; z-index: 2"><span style="width: 20px; height: 20px; border-radius: 50%; background: #F0A68A; border: 2px solid #2B2220; display: flex; align-items: center; justify-content: center; font-family: Silkscreen, monospace; font-size: 10px">C</span><span style="width: 20px; height: 20px; border-radius: 50%; background: #F2C94C; border: 2px solid #2B2220; display: flex; align-items: center; justify-content: center; font-family: Silkscreen, monospace; font-size: 10px">L</span><span style="width: 20px; height: 20px; border-radius: 50%; background: #7E9A4A; border: 2px solid #2B2220; display: flex; align-items: center; justify-content: center; font-family: Silkscreen, monospace; font-size: 10px">A</span><span style="width: 20px; height: 20px; border-radius: 50%; background: #A9B3C4; border: 2px solid #2B2220; display: flex; align-items: center; justify-content: center; font-family: Silkscreen, monospace; font-size: 10px">I</span><span style="width: 20px; height: 20px; border-radius: 50%; background: #D9542F; border: 2px solid #2B2220; display: flex; align-items: center; justify-content: center; font-family: Silkscreen, monospace; font-size: 10px">R</span><span style="width: 20px; height: 20px; border-radius: 50%; background: #C9B6E4; border: 2px solid #2B2220; display: flex; align-items: center; justify-content: center; font-family: Silkscreen, monospace; font-size: 10px">E</span></div>
+<div style="position: absolute; left: 16px; top: 292px; background: #D9542F; border: 2px solid #2B2220; padding: 3px 8px; font-family: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 18px; transform: rotate(-5deg); z-index: 2">CREATOR PRODUCER</div>
+<div style="position: absolute; left: 300px; top: 300px; width: 30px; height: 30px; border-radius: 50%; background: #F2C94C; border: 2px solid #2B2220; z-index: 2"><span style="position: absolute; left: 8px; top: 9px; width: 4px; height: 5px; background: #2B2220"></span><span style="position: absolute; right: 8px; top: 9px; width: 4px; height: 5px; background: #2B2220"></span><span style="position: absolute; left: 8px; top: 16px; width: 12px; height: 5px; border-bottom: 2px solid #2B2220; border-radius: 0 0 8px 8px"></span></div>
+<div style="position: absolute; left: 360px; top: 250px; width: 26px; height: 26px; background: #C9B6E4; border: 2px solid #2B2220; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); z-index: 2"></div>
+<div style="position: absolute; left: 404px; top: 40px; width: 64px; height: 62px; background: #F0A68A; border: 2px solid #2B2220; transform: rotate(6deg); padding: 6px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 15px; line-height: 1; z-index: 2">client<br>call 3pm</div>
+<div class="bezel"><div class="screen">
+<sc-if value="{{isOff}}" hint-placeholder-val="{{true}}">
+<div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #3C4752; font-family: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 26px">&#9679;</div>
+</sc-if>
+<sc-if value="{{isOn}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; inset: 0; background: #EBB27C; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 20px; box-sizing: border-box">
+<div><span aria-hidden="true" style="display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; width: 48px; height: 48px; filter: drop-shadow(3px 3px 0 rgba(43,34,32,.28))"><svg aria-hidden="true" width="48.0" height="48.0" viewBox="0 0 16 16" shape-rendering="crispEdges" style="display: block"><rect x="1" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="2" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="6" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="7" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="8" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="9" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="10" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="11" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="12" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="13" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="0" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="1" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="3" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="4" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="5" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="6" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="7" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="8" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="9" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="10" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="11" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="12" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="13" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="14" y="1" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="1" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="2" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="6" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="7" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="8" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="9" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="10" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="11" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="12" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="13" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="2" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="2" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="3" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="3" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="3" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="3" width="1" height="1" fill="#26303C"></rect><rect x="4" y="3" width="1" height="1" fill="#26303C"></rect><rect x="5" y="3" width="1" height="1" fill="#26303C"></rect><rect x="6" y="3" width="1" height="1" fill="#26303C"></rect><rect x="7" y="3" width="1" height="1" fill="#26303C"></rect><rect x="8" y="3" width="1" height="1" fill="#26303C"></rect><rect x="9" y="3" width="1" height="1" fill="#26303C"></rect><rect x="10" y="3" width="1" height="1" fill="#26303C"></rect><rect x="11" y="3" width="1" height="1" fill="#26303C"></rect><rect x="12" y="3" width="1" height="1" fill="#26303C"></rect><rect x="13" y="3" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="3" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="3" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="4" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="4" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="4" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="4" width="1" height="1" fill="#26303C"></rect><rect x="4" y="4" width="1" height="1" fill="#7CE08A"></rect><rect x="5" y="4" width="1" height="1" fill="#26303C"></rect><rect x="6" y="4" width="1" height="1" fill="#26303C"></rect><rect x="7" y="4" width="1" height="1" fill="#26303C"></rect><rect x="8" y="4" width="1" height="1" fill="#26303C"></rect><rect x="9" y="4" width="1" height="1" fill="#26303C"></rect><rect x="10" y="4" width="1" height="1" fill="#26303C"></rect><rect x="11" y="4" width="1" height="1" fill="#26303C"></rect><rect x="12" y="4" width="1" height="1" fill="#26303C"></rect><rect x="13" y="4" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="4" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="4" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="5" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="5" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="5" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="5" width="1" height="1" fill="#26303C"></rect><rect x="4" y="5" width="1" height="1" fill="#26303C"></rect><rect x="5" y="5" width="1" height="1" fill="#7CE08A"></rect><rect x="6" y="5" width="1" height="1" fill="#26303C"></rect><rect x="7" y="5" width="1" height="1" fill="#26303C"></rect><rect x="8" y="5" width="1" height="1" fill="#26303C"></rect><rect x="9" y="5" width="1" height="1" fill="#26303C"></rect><rect x="10" y="5" width="1" height="1" fill="#26303C"></rect><rect x="11" y="5" width="1" height="1" fill="#26303C"></rect><rect x="12" y="5" width="1" height="1" fill="#26303C"></rect><rect x="13" y="5" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="5" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="5" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="6" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="6" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="6" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="6" width="1" height="1" fill="#26303C"></rect><rect x="4" y="6" width="1" height="1" fill="#7CE08A"></rect><rect x="5" y="6" width="1" height="1" fill="#26303C"></rect><rect x="6" y="6" width="1" height="1" fill="#26303C"></rect><rect x="7" y="6" width="1" height="1" fill="#7CE08A"></rect><rect x="8" y="6" width="1" height="1" fill="#7CE08A"></rect><rect x="9" y="6" width="1" height="1" fill="#7CE08A"></rect><rect x="10" y="6" width="1" height="1" fill="#26303C"></rect><rect x="11" y="6" width="1" height="1" fill="#26303C"></rect><rect x="12" y="6" width="1" height="1" fill="#26303C"></rect><rect x="13" y="6" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="6" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="6" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="7" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="7" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="7" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="7" width="1" height="1" fill="#26303C"></rect><rect x="4" y="7" width="1" height="1" fill="#26303C"></rect><rect x="5" y="7" width="1" height="1" fill="#26303C"></rect><rect x="6" y="7" width="1" height="1" fill="#26303C"></rect><rect x="7" y="7" width="1" height="1" fill="#26303C"></rect><rect x="8" y="7" width="1" height="1" fill="#26303C"></rect><rect x="9" y="7" width="1" height="1" fill="#26303C"></rect><rect x="10" y="7" width="1" height="1" fill="#26303C"></rect><rect x="11" y="7" width="1" height="1" fill="#26303C"></rect><rect x="12" y="7" width="1" height="1" fill="#26303C"></rect><rect x="13" y="7" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="7" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="7" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="8" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="6" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="7" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="8" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="9" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="10" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="11" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="12" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="13" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="8" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="8" width="1" height="1" fill="#2B2220"></rect><rect x="0" y="9" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="2" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="3" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="4" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="5" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="6" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="7" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="8" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="9" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="10" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="11" y="9" width="1" height="1" fill="#D9542F"></rect><rect x="12" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="13" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="14" y="9" width="1" height="1" fill="#F2CDAE"></rect><rect x="15" y="9" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="2" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="6" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="7" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="8" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="9" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="10" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="11" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="12" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="13" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="14" y="10" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="11" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="11" width="1" height="1" fill="#F2CDAE"></rect><rect x="6" y="11" width="1" height="1" fill="#F2CDAE"></rect><rect x="7" y="11" width="1" height="1" fill="#F2CDAE"></rect><rect x="8" y="11" width="1" height="1" fill="#F2CDAE"></rect><rect x="9" y="11" width="1" height="1" fill="#F2CDAE"></rect><rect x="10" y="11" width="1" height="1" fill="#F2CDAE"></rect><rect x="11" y="11" width="1" height="1" fill="#2B2220"></rect><rect x="2" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="6" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="7" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="8" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="9" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="10" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="11" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="12" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="13" y="12" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="13" width="1" height="1" fill="#2B2220"></rect><rect x="2" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="3" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="4" y="13" width="1" height="1" fill="#FFFFFF"></rect><rect x="5" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="6" y="13" width="1" height="1" fill="#FFFFFF"></rect><rect x="7" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="8" y="13" width="1" height="1" fill="#FFFFFF"></rect><rect x="9" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="10" y="13" width="1" height="1" fill="#FFFFFF"></rect><rect x="11" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="12" y="13" width="1" height="1" fill="#F2CDAE"></rect><rect x="13" y="13" width="1" height="1" fill="#DDB08E"></rect><rect x="14" y="13" width="1" height="1" fill="#2B2220"></rect><rect x="1" y="14" width="1" height="1" fill="#2B2220"></rect><rect x="2" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="3" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="4" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="5" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="6" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="7" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="8" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="9" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="10" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="11" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="12" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="13" y="14" width="1" height="1" fill="#DDB08E"></rect><rect x="14" y="14" width="1" height="1" fill="#2B2220"></rect><rect x="2" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="3" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="4" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="5" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="6" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="7" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="8" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="9" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="10" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="11" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="12" y="15" width="1" height="1" fill="#2B2220"></rect><rect x="13" y="15" width="1" height="1" fill="#2B2220"></rect></svg></span></div>
+<span style="font-family: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 30px; line-height: 1; text-align: center">Welcome to<br>Claire Tui's portfolio</span>
+<div class="loadbar" style="width: 70%"><i onAnimationEnd="{{done}}"></i></div>
+<span style="font-family: Silkscreen, monospace; font-size: 12px; letter-spacing: 0.04em; font-size: 11px">LOADING...</span>
+<a href="home.html" data-enter="1" ref="{{setLink}}" style="font-family: Silkscreen, monospace; font-size: 12px; letter-spacing: 0.04em; font-size: 10px; color: #3d4a57">entering... skip &#8250;</a>
+</div>
+<div class="boot"><p style="animation-delay: 0.35s">CLAIRE.OS v8.0</p><p style="animation-delay: 0.85s">RAM check ........ 640K OK</p><p style="animation-delay: 1.35s">Loading creator_campaigns ... OK</p><p style="animation-delay: 1.85s">Loading trophy_case ......... OK</p><p style="animation-delay: 2.35s">Loading vibecode_apps ....... OK</p><p style="animation-delay: 2.85s">Starting desktop ...</p></div>
+<div class="flash"></div>
+</sc-if>
+<div class="scan"></div><div class="glare"></div>
+</div></div>
+<div class="drive"><i></i></div>
+<div class="grille"></div>
+<div class="badge">CLAIRE.OS</div>
+<div class="pwr">
+<span class="{{ledClass}}"></span>
+<button class="pwr-btn" onClick="{{power}}" aria-label="{{powerLabel}}"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 10 10" shape-rendering="crispEdges"><path d="M4 0h2v5H4z M2 2h1v1H2z M1 3h1v4H1z M2 7h1v1H2z M3 8h4v1H3z M7 7h1v1H7z M8 3h1v4H8z M7 2h1v1H7z" fill="#2B2220"></path></svg></button>
+</div>
+<sc-if value="{{isOff}}" hint-placeholder-val="{{true}}"><div class="pwr-hint">Press to power on &#8600;</div></sc-if>
+</div>
+</div></div>
+<div class="kb"><div class="kb-plane"><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key k2"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key k2"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key k2"></span><span class="key k3"></span><span class="key k7"></span><span class="key k3"></span><span class="key k2"></span></div></div>
+<div class="mouse"></div>
+</div>
+</div>
+</div>
+</div>
+</template>
+<script type="text/plain" id="dc-logic">
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { on: false }; this._timer = null; this._link = null; }
+  componentWillUnmount() { if (this._timer) clearTimeout(this._timer); }
+  enter() {
+    if (this._went) return;
+    if (this._timer) clearTimeout(this._timer);
+    const a = this._link || (typeof document !== 'undefined' && document.querySelector('a[data-enter="1"]'));
+    if (!a) return;
+    this._went = true;
+    try { a.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window })); } catch (e) { a.click(); }
+  }
+  chime() {
+    try {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      const ctx = new AC();
+      const t = ctx.currentTime;
+      const tone = (f, start, dur, type, vol) => {
+        const o = ctx.createOscillator(); const g = ctx.createGain();
+        o.type = type; o.frequency.value = f;
+        g.gain.setValueAtTime(0.0001, t + start);
+        g.gain.exponentialRampToValueAtTime(vol, t + start + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + start + dur);
+        o.connect(g); g.connect(ctx.destination);
+        o.start(t + start); o.stop(t + start + dur + 0.05);
+      };
+      tone(1046.5, 0, 0.09, 'square', 0.05);
+      [196.0, 293.66, 392.0, 493.88, 587.33].forEach((f, i) => tone(f, 0.18 + i * 0.012, 2.4, 'triangle', 0.09));
+      [0.9, 1.25, 1.5, 1.9].forEach((s) => tone(80 + Math.random() * 40, s, 0.06, 'square', 0.03));
+    } catch (e) {}
+  }
+  renderVals() {
+    const on = this.state.on;
+    return {
+      isOn: on, isOff: !on,
+      ledClass: on ? 'led led-on' : 'led',
+      powerLabel: on ? 'Turn the computer off' : 'Turn the computer on',
+      setLink: (el) => { this._link = el; },
+      done: () => this.enter(),
+      power: () => {
+        if (on) { if (this._timer) clearTimeout(this._timer); this.setState({ on: false }); return; }
+        this.chime();
+        this._went = false;
+        this.setState({ on: true });
+        this._timer = setTimeout(() => this.enter(), 5400);
+      }
+    };
+  }
+}
+</script>
+<script src="assets/runtime.js"></script>
+</body>
+</html>
