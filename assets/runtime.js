@@ -20,7 +20,7 @@
     const comp = new Comp({});
     let queued = false;
     comp.__schedule = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; render(); }); };
-    function val(vals, name) { return Object.prototype.hasOwnProperty.call(vals, name) ? vals[name] : undefined; }
+    function val(vals, name) { if (name === 'true') return true; if (name === 'false') return false; return Object.prototype.hasOwnProperty.call(vals, name) ? vals[name] : undefined; }
     function render() {
       const vals = comp.renderVals() || {};
       const frag = tpl.content.cloneNode(true);
@@ -60,6 +60,12 @@
       // keep the DOM identity where possible: replace children in one go
       root.replaceChildren(frag);
       refs.forEach(([fn, el]) => { try { fn(el); } catch (e) {} });
+      // videos: make sure muted/inline autoplay actually starts (iOS needs the properties, not just attributes)
+      root.querySelectorAll('video').forEach((v) => {
+        if (v.hasAttribute('muted')) { v.muted = true; v.defaultMuted = true; }
+        if (v.hasAttribute('playsinline')) { v.playsInline = true; v.setAttribute('webkit-playsinline', ''); }
+        if (v.hasAttribute('autoplay')) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+      });
     }
     comp.__render = render;
     render();

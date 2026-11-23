@@ -8,7 +8,8 @@
 <meta property="og:title" content="Claire Tui — Creator Producer">
 <meta property="og:description" content="Claire Tui is a Singapore-based creator producer: creator campaigns, social ads, video productions and offline activations for Meta, HEPMIL/SGAG, Big 3 Media and CNA.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#2B2220">
+<meta name="theme-color" content="#2E2724">
+<style>html{background:#2E2724}</style>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&amp;family=Silkscreen&amp;display=swap">
@@ -85,6 +86,14 @@ a{color:#2B2220}a:hover{color:#2F5FA8}
 .dd{position:relative;display:inline-flex}
 .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:270px;background:#fff;border:2px solid #2B2220;box-shadow:3px 3px 0 #2B2220;flex-direction:column;padding:6px;z-index:20}
 .dd:hover .dd-menu,.dd:focus-within .dd-menu{display:flex}
+.dd-m{display:none}
+.dd-m > summary{list-style:none;cursor:pointer;user-select:none}
+.dd-m > summary::-webkit-details-marker{display:none}
+.dd-m[open] > summary{background:#2B2220;color:#fff}
+.dd-m-menu{position:absolute;left:10px;right:10px;top:100%;margin-top:6px;background:#FFF8EF;border:2.5px solid #2B2220;box-shadow:4px 4px 0 #2B2220;border-radius:10px;padding:6px;display:flex;flex-direction:column;z-index:40;font-family:'IBM Plex Sans Condensed','Arial Narrow',sans-serif;font-weight:600}
+.dd-m-menu a{text-decoration:none;padding:10px 12px;min-height:48px;box-sizing:border-box;display:flex;align-items:center;gap:12px;font-size:17px;border-radius:6px}
+.dd-m-menu a + a{border-top:1.5px dashed rgba(43,34,32,.25)}
+.dd-m-menu a:active{background:#F2C45C}
 .dd-menu a{text-decoration:none;padding:10px 12px;min-height:44px;box-sizing:border-box;display:flex;align-items:center;gap:10px}
 .dd-menu a:hover{background:#2B2220;color:#fff}
 .xbtn{min-height:44px;padding:0 18px;border:2px solid #2B2220;background:#fff;font-family:'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;font-weight:600;font-size:20px;cursor:pointer;color:#2B2220}
@@ -108,6 +117,8 @@ a{color:#2B2220}a:hover{color:#2F5FA8}
 @media (prefers-reduced-motion:reduce){.lcl,.lcl-m1,.lcl-m2,.lcl-m3,.lcl span{animation:none !important}}
 
 .room{container-type:inline-size;container-name:room;position:relative;overflow:hidden}
+.lg{position:absolute;left:0;top:0;width:0;height:0;transform-origin:0 0}
+.m-only{display:none}
 .stage{position:relative;width:1000px;height:700px;margin:0 auto}
 @container room (max-width:999px){.stage{zoom:.8}}
 @container room (max-width:799px){.stage{zoom:.62}}
@@ -221,12 +232,17 @@ a{color:#2B2220}a:hover{color:#2F5FA8}
 .navlinks{flex-wrap:nowrap !important;overflow-x:auto;width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .navlinks::-webkit-scrollbar{display:none}
 .navlinks{gap:0 !important}
-header nav{padding:4px 10px !important}
+header nav{padding:2px 10px 0 !important;gap:0 8px !important}
+header nav > a.navlink:first-child{font-size:20px !important;min-height:40px;padding:6px 4px 2px}
+header nav > a.navlink:first-child > span{width:30px !important;height:30px !important}
+header nav > div[style*="flex: 1 1 20px"]{display:none}
 .fold-paper li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block !important}
 .navlink{white-space:nowrap;padding:8px 6px;font-size:11px;letter-spacing:0}
 .deco-win{transform:scale(.6);transform-origin:top left;top:90px !important}
 .deco-note{transform:scale(.62) rotate(3deg) !important;transform-origin:top right;top:110px !important}
 .dd-menu{display:none !important}
+.dd{display:none !important}
+.dd-m{display:block !important}
 .tabrow{flex-wrap:wrap !important;gap:8px !important;padding:2px 0 8px}
 .tabrow::-webkit-scrollbar{display:none}
 .tabrow .tab{white-space:nowrap;flex:0 0 auto;font-size:16px !important;padding:0 12px !important;min-height:42px !important;height:auto !important}
@@ -256,7 +272,26 @@ h1{overflow-wrap:anywhere}
 
 @container room (max-width:999px){.stage{zoom:.8 !important}.desk1{height:240px !important}}
 @container room (max-width:799px){.stage{zoom:.7 !important;margin-left:calc((100cqw - 700px) / 1.4) !important}.desk1{height:210px !important}}
-@container room (max-width:479px){.stage{zoom:.62 !important;margin-left:calc((100cqw - 620px) / 1.24) !important}.desk1{height:186px !important}}
+@container room (max-width:599px){
+.room-mid{align-items:flex-end !important}
+.stage{height:900px !important;margin-top:350px !important}
+.rig,.kb,.mouse,.lshadow{translate:0 240px}
+.g-win{translate:-310px -10px}
+.g-wl{translate:118px -100px;scale:.85}
+.g-mid{translate:-78px -220px;scale:.7}
+.g-dl{translate:95px 300px;scale:.85}
+.g-dr{translate:-40px 330px;scale:.85}
+.pwr-hint{bottom:96px}
+.pwr-btn{scale:1.35}
+.mouse{translate:-40px 240px}
+.g-dr{display:none}
+.m-only{display:flex !important}
+}
+@container room (max-width:599px){.stage{zoom:.62 !important;margin-left:calc((100cqw - 620px) / 1.24) !important}.desk1{height:186px !important}}
+@container room (max-width:479px){.stage{zoom:.55 !important;margin-left:calc((100cqw - 550px) / 1.1) !important}.desk1{height:165px !important}}
+@container room (max-width:429px){.stage{zoom:.5 !important;margin-left:calc(100cqw - 500px) !important}.desk1{height:150px !important}}
+@container room (max-width:389px){.stage{zoom:.46 !important;margin-left:calc((100cqw - 460px) / .92) !important}.desk1{height:138px !important}}
+@container room (max-width:359px){.stage{zoom:.41 !important;margin-left:calc((100cqw - 410px) / .82) !important}.desk1{height:123px !important}}
 </style>
 
 </head>
@@ -266,11 +301,15 @@ h1{overflow-wrap:anywhere}
 <div class="grain" style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: #2B2220; background-color: #F6EBDB; min-height: 100vh">
 <div class="room" style="min-height: 100vh; background: repeating-linear-gradient(90deg, #2E2724 0 86px, #282120 86px 90px); display: flex; flex-direction: column">
 <p style="position: relative; z-index: 2; margin: 28px 0 0; text-align: center; font-family: Silkscreen, monospace; font-size: 12px; letter-spacing: 0.04em; color: #F6EBDB">Claire Tui · Portfolio</p>
-<div style="flex: 1; display: flex; align-items: flex-end; position: relative">
+<div class="room-mid" style="flex: 1; display: flex; align-items: flex-end; position: relative">
 <div class="desk1" style="position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: #CF7426; border-top: 4px solid #2B2220; box-shadow: inset 0 18px 0 #D97F2E"></div>
 <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 40px; background: #9A4E1C; border-top: 3px solid #2B2220"></div>
 <div class="stage">
+<div class="lg g-wl">
 <div style="position: absolute; left: 6px; top: -56px; width: 270px; height: 340px; background: #D9822B; border: 3px solid #2B2220; border-radius: 6px; box-shadow: inset 0 0 0 10px #B8622A, 5px 5px 0 rgba(0,0,0,.35)"></div>
+<div style="position: absolute; left: 30px; top: -30px; width: 110px; height: 110px; background: #F2C94C; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(-6deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>shoot<br>fri 9am</div><div style="position: absolute; left: 140px; top: 40px; width: 100px; height: 100px; background: #F0A68A; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(5deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>call<br>agency</div><div style="position: absolute; left: 40px; top: 110px; width: 104px; height: 104px; background: #7E9A4A; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(3deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>send<br>deck!</div><div style="position: absolute; left: 150px; top: 160px; width: 96px; height: 96px; background: #A9B3C4; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(-4deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>edit v2<br>by 6pm</div>
+</div>
+<div class="lg g-win">
 <div style="position: absolute; left: 770px; top: -190px; width: 420px; height: 440px; border: 5px solid #2B2220; border-radius: 8px; background: linear-gradient(180deg, #6FA6E6 0%, #9CC7F0 55%, #CFE5F6 100%); box-shadow: inset 0 0 0 14px #F3DCC2, inset 0 0 0 17px #2B2220, 6px 6px 0 rgba(0,0,0,.35); overflow: hidden">
 <span style="position: absolute; left: 300px; top: 44px; width: 54px; height: 54px; border-radius: 50%; background: #FFE08A; border: 3px solid #2B2220; box-shadow: 0 0 0 10px rgba(255,224,138,.35)"></span>
 <div class="lcl-wrap"><div class="lcl" style="top: 40px; animation-duration: 38s; animation-delay: -0s"><div class="lcl-m1" style="position: relative; width: 150px; height: 55px; animation-duration: 7s"><span class="lcl-b" style="left: 0; top: 19px; width: 120px; height: 34px; border-radius: 34px"></span><span class="lcl-p" style="left: 30px; top: 4px; width: 60px; height: 34px; border-radius: 34px 34px 0 0"></span><span class="lcl-p2" style="left: 66px; top: 11px; width: 42px; height: 28px; border-radius: 34px 34px 0 0"></span></div></div><div class="lcl" style="top: 110px; animation-duration: 52s; animation-delay: -20s"><div class="lcl-m2" style="position: relative; width: 170px; height: 61px; animation-duration: 9s"><span class="lcl-b" style="left: 0; top: 21px; width: 140px; height: 38px; border-radius: 38px"></span><span class="lcl-p" style="left: 35px; top: 4px; width: 70px; height: 38px; border-radius: 38px 38px 0 0"></span><span class="lcl-p2" style="left: 76px; top: 13px; width: 50px; height: 32px; border-radius: 38px 38px 0 0"></span></div></div><div class="lcl" style="top: 175px; animation-duration: 30s; animation-delay: -12s"><div class="lcl-m3" style="position: relative; width: 130px; height: 49px; animation-duration: 6s"><span class="lcl-b" style="left: 0; top: 17px; width: 100px; height: 30px; border-radius: 30px"></span><span class="lcl-p" style="left: 25px; top: 4px; width: 50px; height: 30px; border-radius: 30px 30px 0 0"></span><span class="lcl-p2" style="left: 56px; top: 9px; width: 35px; height: 24px; border-radius: 30px 30px 0 0"></span></div></div><div class="lcl" style="top: 240px; animation-duration: 44s; animation-delay: -33s"><div class="lcl-m1" style="position: relative; width: 140px; height: 52px; animation-duration: 8s"><span class="lcl-b" style="left: 0; top: 18px; width: 110px; height: 32px; border-radius: 32px"></span><span class="lcl-p" style="left: 27px; top: 4px; width: 55px; height: 32px; border-radius: 32px 32px 0 0"></span><span class="lcl-p2" style="left: 61px; top: 10px; width: 39px; height: 26px; border-radius: 32px 32px 0 0"></span></div></div><div class="lcl" style="top: 285px; animation-duration: 34s; animation-delay: -6s"><div class="lcl-m2" style="position: relative; width: 110px; height: 43px; animation-duration: 7s"><span class="lcl-b" style="left: 0; top: 15px; width: 80px; height: 26px; border-radius: 26px"></span><span class="lcl-p" style="left: 20px; top: 4px; width: 40px; height: 26px; border-radius: 26px 26px 0 0"></span><span class="lcl-p2" style="left: 46px; top: 7px; width: 28px; height: 20px; border-radius: 26px 26px 0 0"></span></div></div><div class="lcl" style="top: 70px; animation-duration: 60s; animation-delay: -45s"><div class="lcl-m3" style="position: relative; width: 100px; height: 37px; animation-duration: 10s"><span class="lcl-b" style="left: 0; top: 13px; width: 70px; height: 22px; border-radius: 22px"></span><span class="lcl-p" style="left: 17px; top: 4px; width: 35px; height: 22px; border-radius: 22px 22px 0 0"></span><span class="lcl-p2" style="left: 41px; top: 5px; width: 25px; height: 16px; border-radius: 22px 22px 0 0"></span></div></div></div>
@@ -285,6 +324,8 @@ h1{overflow-wrap:anywhere}
 <div style="position: absolute; left: 776px; top: 172px; width: 34px; height: 22px; background: #7E9A4A; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-25deg)"></div>
 <div style="position: absolute; left: 806px; top: 166px; width: 32px; height: 22px; background: #5E7A36; border: 3px solid #2B2220; border-radius: 0 100%; transform: rotate(20deg)"></div>
 <div style="position: absolute; left: 1120px; top: 196px; width: 44px; height: 44px; background: #F4D5BA; border: 3px solid #2B2220; border-radius: 50% 50% 8px 8px; box-sizing: border-box"><span style="position: absolute; left: 8px; top: 8px; width: 22px; height: 22px; border-radius: 50%; border: 3px solid #2B2220; background: #FFF3E3; box-sizing: border-box"></span></div>
+</div>
+<div class="lg g-mid">
 <div style="position: absolute; left: 300px; top: -138px; width: 96px; height: 96px; border-radius: 50%; background: #FFF3E3; border: 4px solid #2B2220; box-shadow: 4px 4px 0 rgba(0,0,0,.35)"><span style="position: absolute; left: 44px; top: 16px; width: 4px; height: 32px; background: #2B2220; border-radius: 2px"></span><span style="position: absolute; left: 44px; top: 44px; width: 24px; height: 4px; background: #D9542F; border-radius: 2px"></span><span style="position: absolute; left: 42px; top: 42px; width: 8px; height: 8px; border-radius: 50%; background: #2B2220"></span></div>
 <div style="position: absolute; left: 440px; top: -150px; width: 130px; height: 160px; background: #FFF3E3; border: 4px solid #2B2220; box-shadow: 4px 4px 0 rgba(0,0,0,.35); padding: 12px; box-sizing: border-box; transform: rotate(2deg)"><div style="height: 100%; background: linear-gradient(180deg, #A9B3C4 0 40%, #F0A68A 40% 48%, #2B2220 48% 56%, #D9542F 56% 100%); border: 2px solid #2B2220"></div></div>
 <div style="position: absolute; left: 600px; top: -118px; width: 150px; height: 12px; background: #D97F2E; border: 3px solid #2B2220; border-radius: 3px"></div>
@@ -293,16 +334,20 @@ h1{overflow-wrap:anywhere}
 <svg width="470" height="60" viewBox="0 0 470 60" style="position: absolute; left: 0; top: 0; overflow: visible" aria-hidden="true"><path d="M0 6 Q235 60 470 6" fill="none" stroke="#2B2220" stroke-width="2.5"></path></svg>
 <span style="position: absolute; left: 40px; top: 14px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(-6deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #A9B3C4"></span></span><span style="position: absolute; left: 130px; top: 30px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(4deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #F0A68A"></span></span><span style="position: absolute; left: 230px; top: 34px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(-3deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #7E9A4A"></span></span><span style="position: absolute; left: 330px; top: 26px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(5deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #F2C45C"></span></span><span style="position: absolute; left: 410px; top: 12px; width: 36px; height: 44px; background: #FFF3E3; border: 2.5px solid #2B2220; padding: 4px; box-sizing: border-box; transform: rotate(-4deg); box-shadow: 2px 2px 0 rgba(0,0,0,.3)"><span style="display: block; height: 24px; background: #4F78B8"></span></span>
 </div>
-<div style="position: absolute; left: 30px; top: -30px; width: 110px; height: 110px; background: #F2C94C; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(-6deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>shoot<br>fri 9am</div><div style="position: absolute; left: 140px; top: 40px; width: 100px; height: 100px; background: #F0A68A; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(5deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>call<br>agency</div><div style="position: absolute; left: 40px; top: 110px; width: 104px; height: 104px; background: #7E9A4A; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(3deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>send<br>deck!</div><div style="position: absolute; left: 150px; top: 160px; width: 96px; height: 96px; background: #A9B3C4; border: 3px solid #2B2220; box-shadow: 4px 5px 0 rgba(20,20,20,.2); transform: rotate(-4deg); padding: 10px; box-sizing: border-box; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.05"><span style="position: absolute; left: 50%; top: -8px; width: 34px; height: 12px; margin-left: -17px; background: rgba(255,255,255,.6); border: 1px solid rgba(20,20,20,.3)"></span>edit v2<br>by 6pm</div>
+</div>
+<div class="lg g-dl">
 <div style="position: absolute; left: 112px; top: 438px; width: 56px; height: 12px; background: rgba(20,20,20,.22); border-radius: 50%"></div><div style="position: absolute; left: 124px; top: 380px; width: 30px; height: 18px; background: #7DBE6E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-40deg)"></div><div style="position: absolute; left: 146px; top: 376px; width: 30px; height: 18px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(40deg)"></div><div style="position: absolute; left: 136px; top: 366px; width: 24px; height: 18px; background: #4C9A50; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-90deg)"></div><div style="position: absolute; left: 118px; top: 396px; width: 44px; height: 48px; background: #D9735B; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"><span style="position: absolute; left: -6px; right: -6px; top: -3px; height: 12px; background: #D9735B; border: 3px solid #2B2220; border-radius: 3px"></span></div>
 <span style="position: absolute; left: 196px; top: 340px; width: 8px; height: 46px; background: #F2C94C; border: 2px solid #2B2220; transform: rotate(-10deg)"></span><span style="position: absolute; left: 206px; top: 334px; width: 8px; height: 46px; background: #2F5FD0; border: 2px solid #2B2220; transform: rotate(4deg)"></span><span style="position: absolute; left: 216px; top: 342px; width: 8px; height: 46px; background: #D9534F; border: 2px solid #2B2220; transform: rotate(14deg)"></span>
 <div style="position: absolute; left: 188px; top: 372px; width: 42px; height: 72px; background: #A9B3C4; border: 3px solid #2B2220; border-radius: 2px 2px 8px 8px; box-sizing: border-box"></div>
 <div style="position: absolute; left: 30px; top: 430px; width: 120px; height: 80px; background: #FBEBDD; border: 3px solid #2B2220; box-sizing: border-box; transform: rotate(-8deg); background-image: repeating-linear-gradient(to bottom, transparent 0 12px, #A9B3C4 12px 14px)"><span style="position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: #D9542F"></span></div>
 <div style="position: absolute; left: 60px; top: 520px; width: 110px; height: 10px; background: #F2C94C; border: 2px solid #2B2220; transform: rotate(-8deg)"></div>
+</div>
+<div class="lg g-dr">
 <div style="position: absolute; left: 800px; top: 418px; width: 76px; height: 12px; background: rgba(20,20,20,.22); border-radius: 50%"></div><div style="position: absolute; left: 800px; top: 330px; width: 60px; height: 30px; background: #3E8E4E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-30deg)"></div><div style="position: absolute; left: 836px; top: 316px; width: 64px; height: 32px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(20deg)"></div><div style="position: absolute; left: 812px; top: 300px; width: 50px; height: 26px; background: #4C9A50; border: 3px solid #2B2220; border-radius: 100% 0; transform: rotate(-70deg)"></div><div style="position: absolute; left: 806px; top: 366px; width: 64px; height: 58px; background: #F2C94C; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"><span style="position: absolute; left: -6px; right: -6px; top: -3px; height: 12px; background: #F2C94C; border: 3px solid #2B2220; border-radius: 3px"></span></div>
 <div style="position: absolute; left: 886px; top: 446px; width: 64px; height: 12px; background: rgba(20,20,20,.22); border-radius: 50%"></div><div style="position: absolute; left: 906px; top: 352px; width: 26px; height: 64px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 14px 14px 0 0; box-sizing: border-box"></div><div style="position: absolute; left: 892px; top: 368px; width: 16px; height: 26px; background: #5EAA5E; border: 3px solid #2B2220; border-radius: 10px 10px 0 0; box-sizing: border-box"></div><div style="position: absolute; left: 892px; top: 412px; width: 52px; height: 40px; background: #F4D5BA; border: 3px solid #2B2220; border-radius: 4px 4px 10px 10px; box-sizing: border-box"><span style="position: absolute; left: -6px; right: -6px; top: -3px; height: 12px; background: #F4D5BA; border: 3px solid #2B2220; border-radius: 3px"></span></div>
 <div style="position: absolute; left: 846px; top: 520px; width: 46px; height: 22px; background: #fff; border: 3px solid #2B2220; border-radius: 4px; box-sizing: border-box; transform: rotate(10deg)"><span style="position: absolute; left: 4px; right: 4px; top: 4px; height: 6px; background: #F0A68A"></span></div>
-<div style="position: absolute; left: 230px; top: 440px; width: 600px; height: 60px; background: rgba(20,20,20,.28); border-radius: 50%; filter: blur(6px)"></div>
+</div>
+<div class="lshadow" style="position: absolute; left: 230px; top: 440px; width: 600px; height: 60px; background: rgba(20,20,20,.28); border-radius: 50%; filter: blur(6px)"></div>
 <div class="rig"><div class="box">
 <div class="face f-top"></div>
 <div class="face f-side"><div class="vent"></div></div>
